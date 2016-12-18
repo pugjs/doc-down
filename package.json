@@ -1,0 +1,40 @@
+{
+  "name": "doc-down",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "description": "Renders markdown with custom elements inline for documentation",
+  "keywords": [],
+  "files": [
+    "lib/"
+  ],
+  "dependencies": {
+    "babel-runtime": "^6.3.19",
+    "constantinople": "^3.1.0",
+    "pug-lexer": "^2.3.0",
+    "react": "^15.4.1",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-preset-forbeslindesay": "*",
+    "eslint": "*",
+    "eslint-config-forbeslindesay": "*",
+    "react-test-renderer": "^15.4.1"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib",
+    "lint": "eslint src",
+    "test": "jest --coverage && npm run lint",
+    "watch": "jest --coverage --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pugjs/doc-down.git"
+  },
+  "author": {
+    "name": "Forbes Lindesay",
+    "url": "http://github.com/ForbesLindesay"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,387 @@
+exports[`test kithen-sink.md 1`] = `
+Array [
+  Object {
+    "attrs": Object {
+      "id": "a-great-anchor",
+    },
+    "children": Array [
+      Object {
+        "content": "Document Title",
+        "type": "text",
+      },
+      Object {
+        "attrs": Object {
+          "aria-hidden": "true",
+          "className": "header-anchor",
+          "href": "#a-great-anchor",
+        },
+        "children": Array [
+          Object {
+            "content": "¶",
+            "type": "text",
+          },
+        ],
+        "elementType": "permalink",
+        "tag": "a",
+        "type": "element",
+      },
+    ],
+    "elementType": "heading",
+    "tag": "h1",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {
+      "id": "a-title-with-code-and-bold-text",
+    },
+    "children": Array [
+      Object {
+        "content": "A title with ",
+        "type": "text",
+      },
+      Object {
+        "code": "code",
+        "type": "code_inline",
+      },
+      Object {
+        "content": " and ",
+        "type": "text",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "bold text",
+            "type": "text",
+          },
+        ],
+        "elementType": "strong",
+        "tag": "strong",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {
+          "aria-hidden": "true",
+          "className": "header-anchor",
+          "href": "#a-title-with-code-and-bold-text",
+        },
+        "children": Array [
+          Object {
+            "content": "¶",
+            "type": "text",
+          },
+        ],
+        "elementType": "permalink",
+        "tag": "a",
+        "type": "element",
+      },
+    ],
+    "elementType": "heading",
+    "tag": "h2",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {},
+    "children": Array [
+      Object {
+        "content": "Hello: ",
+        "type": "text",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "World",
+            "type": "text",
+          },
+        ],
+        "elementType": "strong",
+        "tag": "strong",
+        "type": "element",
+      },
+    ],
+    "elementType": "paragraph",
+    "tag": "p",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {
+      "attr": "value",
+    },
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "some ",
+            "type": "text",
+          },
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "content",
+                "type": "text",
+              },
+            ],
+            "elementType": "strong",
+            "tag": "strong",
+            "type": "element",
+          },
+        ],
+        "elementType": "paragraph",
+        "tag": "p",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "More Content",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+          Object {
+            "code": "var x = 10;",
+            "lang": "js",
+            "type": "code",
+          },
+        ],
+        "elementType": "custom_element",
+        "tag": "World",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "This content is plain text",
+            "type": "text",
+          },
+        ],
+        "elementType": "custom_element",
+        "tag": "World",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "Outer Content",
+            "type": "text",
+          },
+        ],
+        "elementType": "paragraph",
+        "tag": "p",
+        "type": "element",
+      },
+    ],
+    "elementType": "custom_element",
+    "tag": "Hello",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {},
+    "children": Array [
+      Object {
+        "content": "Not in any details",
+        "type": "text",
+      },
+    ],
+    "elementType": "paragraph",
+    "tag": "p",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {},
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "A thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "Another thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+    ],
+    "elementType": "ordered_list",
+    "tag": "ol",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {},
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "A thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "Another thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+    ],
+    "elementType": "bullet_list",
+    "tag": "ul",
+    "type": "element",
+  },
+]
+`;
+
+exports[`test kithen-sink.md 2`] = `
+<div>
+  <h1
+    id="a-great-anchor">
+    Document Title
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#a-great-anchor">
+      ¶
+    </a>
+  </h1>
+  <h2
+    id="a-title-with-code-and-bold-text">
+    A title with 
+    <code>
+      code
+    </code>
+     and 
+    <strong>
+      bold text
+    </strong>
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#a-title-with-code-and-bold-text">
+      ¶
+    </a>
+  </h2>
+  <p>
+    Hello: 
+    <strong>
+      World
+    </strong>
+  </p>
+  <Hello
+    attr="value">
+    <p>
+      some 
+      <strong>
+        content
+      </strong>
+    </p>
+    <World>
+      <p>
+        More Content
+      </p>
+      <code>
+        var x = 10;
+      </code>
+    </World>
+    <World>
+      This content is plain text
+    </World>
+    <p>
+      Outer Content
+    </p>
+  </Hello>
+  <p>
+    Not in any details
+  </p>
+  <ol>
+    <li>
+      <p>
+        A thing
+      </p>
+    </li>
+    <li>
+      <p>
+        Another thing
+      </p>
+    </li>
+  </ol>
+  <ul>
+    <li>
+      <p>
+        A thing
+      </p>
+    </li>
+    <li>
+      <p>
+        Another thing
+      </p>
+    </li>
+  </ul>
+</div>
+`;
