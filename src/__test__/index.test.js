@@ -13,6 +13,7 @@ readdirSync(__dirname + '/__cases__').forEach(testCase => {
     expect(data).toMatchSnapshot();
 
     const customElements = {
+      Alert: 'Alert',
       Hello: 'Hello',
       World: 'World',
     };
