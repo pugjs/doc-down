@@ -42,7 +42,7 @@ class DocDown {
   parse(filename, str) {
     const md = this._md;
     function parseInner(str, startingLine) {
-      const tokens = md.parse(str);
+      const tokens = md.parse(str, {});
       function convertTokensToAst(tokens) {
         let i = 0;
         function toAst() {
