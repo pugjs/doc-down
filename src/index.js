@@ -42,7 +42,23 @@ class DocDown {
   parse(filename, str) {
     const md = this._md;
     function parseInner(str, startingLine) {
-      const tokens = md.parse(str, {});
+      let tokens = md.parse(str, {});
+
+      // this is a dirty, and I mean really dirty, hack to remove invalid duplicated tokens that get inserted when
+      // custom elements immediately follow bullet lists
+      let changed = true;
+      function removeInvalidTokens(token, i, tokens) {
+        if (token.type !== 'list_item_close' && tokens[i + 1] && tokens[i + 1].type === 'bullet_list_close') {
+          changed = true;
+          return false;
+        }
+        return true;
+      }
+      while (changed) {
+        changed = false;
+        tokens = tokens.filter(removeInvalidTokens);
+      }
+
       function convertTokensToAst(tokens) {
         let i = 0;
         function toAst() {
@@ -87,8 +103,9 @@ class DocDown {
               });
             } else if (tokens[i].type === 'inline') {
               nodes.push(...convertTokensToAst(tokens[i].children));
-            } else {
+            } else if (tokens[i].nesting){
               const parent = tokens[i++];
+
               const node = {
                 type: 'element',
                 elementType: parent.type.replace(/_open$/, ''),
@@ -96,6 +113,7 @@ class DocDown {
                 attrs: {},
                 children: toAst(),
               };
+
               if (node.elementType === 'heading') {
                 const lastChild = node.children[node.children.length - 1];
                 if (lastChild.type === 'text' && lastChild.content.indexOf(' ~~ ') !== -1) {
@@ -129,6 +147,17 @@ class DocDown {
               }
               nodes.push(node);
               // close token is automatically ignored because the next thing that happens is an increment
+            } else {
+              const parent = tokens[i];
+
+              const node = {
+                type: 'element',
+                elementType: parent.type.replace(/_open$/, ''),
+                tag: parent.tag,
+                attrs: {},
+                children: [],
+              };
+              nodes.push(node);
             }
           }
           return nodes;

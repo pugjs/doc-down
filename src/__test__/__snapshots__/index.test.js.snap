@@ -1,3 +1,116 @@
+exports[`test after-ul.md 1`] = `
+Array [
+  Object {
+    "attrs": Object {},
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "A thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "attrs": Object {},
+            "children": Array [
+              Object {
+                "content": "Another thing",
+                "type": "text",
+              },
+            ],
+            "elementType": "paragraph",
+            "tag": "p",
+            "type": "element",
+          },
+        ],
+        "elementType": "list_item",
+        "tag": "li",
+        "type": "element",
+      },
+    ],
+    "elementType": "bullet_list",
+    "tag": "ul",
+    "type": "element",
+  },
+  Object {
+    "attrs": Object {
+      "level": "danger",
+      "title": "Caution",
+    },
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "Unescaped buffered code can be dangerous. You must be sure to sanitize any user",
+            "type": "text",
+          },
+          Object {
+            "attrs": Object {},
+            "children": Array [],
+            "elementType": "softbreak",
+            "tag": "br",
+            "type": "element",
+          },
+          Object {
+            "content": "inputs to avoid [cross-site scripting] (XSS).",
+            "type": "text",
+          },
+        ],
+        "elementType": "paragraph",
+        "tag": "p",
+        "type": "element",
+      },
+    ],
+    "elementType": "custom_element",
+    "tag": "Alert",
+    "type": "element",
+  },
+]
+`;
+
+exports[`test after-ul.md 2`] = `
+<div>
+  <ul>
+    <li>
+      <p>
+        A thing
+      </p>
+    </li>
+    <li>
+      <p>
+        Another thing
+      </p>
+    </li>
+  </ul>
+  <Alert
+    level="danger"
+    title="Caution">
+    <p>
+      Unescaped buffered code can be dangerous. You must be sure to sanitize any user
+      <br />
+      inputs to avoid [cross-site scripting] (XSS).
+    </p>
+  </Alert>
+</div>
+`;
+
 exports[`test kithen-sink.md 1`] = `
 Array [
   Object {
@@ -383,5 +496,58 @@ exports[`test kithen-sink.md 2`] = `
       </p>
     </li>
   </ul>
+</div>
+`;
+
+exports[`test simple-attributes.md 1`] = `
+Array [
+  Object {
+    "attrs": Object {
+      "level": "danger",
+      "title": "Caution",
+    },
+    "children": Array [
+      Object {
+        "attrs": Object {},
+        "children": Array [
+          Object {
+            "content": "Unescaped buffered code can be dangerous. You must be sure to sanitize any user",
+            "type": "text",
+          },
+          Object {
+            "attrs": Object {},
+            "children": Array [],
+            "elementType": "softbreak",
+            "tag": "br",
+            "type": "element",
+          },
+          Object {
+            "content": "inputs to avoid [cross-site scripting] (XSS).",
+            "type": "text",
+          },
+        ],
+        "elementType": "paragraph",
+        "tag": "p",
+        "type": "element",
+      },
+    ],
+    "elementType": "custom_element",
+    "tag": "Alert",
+    "type": "element",
+  },
+]
+`;
+
+exports[`test simple-attributes.md 2`] = `
+<div>
+  <Alert
+    level="danger"
+    title="Caution">
+    <p>
+      Unescaped buffered code can be dangerous. You must be sure to sanitize any user
+      <br />
+      inputs to avoid [cross-site scripting] (XSS).
+    </p>
+  </Alert>
 </div>
 `;
