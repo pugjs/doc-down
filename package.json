@@ -1,6 +1,6 @@
 {
   "name": "doc-down",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "description": "Renders markdown with custom elements inline for documentation",
   "keywords": [],
